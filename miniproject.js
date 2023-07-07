@@ -41,9 +41,3 @@ calculate.addEventListener('click', () =>{
    
 })
 
-calculate.addEventListener('click', (event) =>{
-    if(!event.target.checkValidity()){
-        event.preventDefault()
-        errorMessage.style.display ='block'
-    }
-})

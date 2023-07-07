@@ -11,6 +11,7 @@
         <h1>Calculate a weight of an object on a planet</h1>
         <div class="input-container">
             <input required placeholder="Enter Number" class="input-field" type="number" id="mass">
+            <span id="errorMessage"></span>
             <label for="input-field" class="input-label">Enter Number</label>
             <span class="input-highlight"></span>
           </div>          
@@ -25,7 +26,6 @@
                 <option value="Neptune">Neptune</option>
             </select>
             <button class="Calculate">Calculate Weight </button>
-            <p id="error-message" style="display: none; color: red;">Please fill in all required fields</p>
     </div>
     <script src="miniproject.js"></script>
 </body>

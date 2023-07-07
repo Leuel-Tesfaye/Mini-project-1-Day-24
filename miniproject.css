@@ -67,10 +67,11 @@ body{
     width: 200px;
   }
      /*--------input required----------*/
-  input:required:invalid::after {
-    content: "This field is required";
+ span #errorMessage {
+    display: none;
     color: red;
-  }
+    font-size: 14px;
+ }
 
   /* -----------header -----------*/
 .container h1{
