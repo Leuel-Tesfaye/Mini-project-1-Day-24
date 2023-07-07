@@ -9,9 +9,12 @@
 <body>
     <div class="container">
         <h1>Calculate a weight of an object on a planet</h1>
-        <div class="input">
-            <input type="number" name="" id="mass" placeholder="Mass in Kilogram">
-            <select name="" id="planet">
+        <div class="input-container">
+            <input required placeholder="Enter Number" class="input-field" type="number" id="mass">
+            <label for="input-field" class="input-label">Enter Number</label>
+            <span class="input-highlight"></span>
+          </div>          
+            <select name="" id="select" class="select-planet">
                 <option value="Mercury">Mercury</option>
                 <option value="Venus">Venus</option>
                 <option value="Earth">Earth</option>
@@ -21,7 +24,8 @@
                 <option value="Uranus">Uranus</option>
                 <option value="Neptune">Neptune</option>
             </select>
-        </div>
+            <button class="Calculate">Calculate Weight </button>
+            <p id="error-message" style="display: none; color: red;">Please fill in all required fields</p>
     </div>
     <script src="miniproject.js"></script>
 </body>
